@@ -1,0 +1,43 @@
+Fact-DB
+
+A database of facts that keeps every version.
+
+Fact::DB holds facts about entities in memory. Every transaction makes a
+new database value and leaves the old one as it was, so any version can be
+read and queried. Queries are written in Datalog, with rules.
+
+Requires a C compiler, perl 5.10 or later, and HAMT.
+
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Fact::DB
+
+You can also look for information at:
+
+    RT, CPAN's request tracker (report bugs here)
+        https://rt.cpan.org/NoAuth/Bugs.html?Dist=Fact-DB
+
+    Search CPAN
+        https://metacpan.org/release/Fact-DB
+
+
+LICENSE AND COPYRIGHT
+
+This software is Copyright (c) 2026 by LNATION <email@lnation.org>.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
